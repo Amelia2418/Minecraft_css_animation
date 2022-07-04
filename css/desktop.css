@@ -1,0 +1,105 @@
+.cube_top, .cube_bottom {
+    display: flex;
+    justify-content: space-between;
+}
+
+
+#mediano, #pequeño {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 45.0rem;
+}
+
+#mediano .cube, #pequeño .cube {
+    width: 18.0rem;
+    height: 18.0rem;
+}
+
+#mediano .uno, #pequeño .uno {
+    transform: rotateY(0deg) translateZ(9.0rem);
+}
+#mediano .dos, #pequeño .dos {
+    transform: rotateY(90deg) translateZ(9.0rem);
+}
+#mediano .tres, #pequeño .tres {
+    transform: rotateY(180deg) translateZ(9.0rem);
+}
+#mediano .cuatro, #pequeño .cuatro {
+    transform: rotateY(270deg) translateZ(9.0rem);
+}
+
+#mediano .top, #pequeño .top {
+    width: 18.0rem;
+    height: 18.0rem;
+    transform: rotateX(90deg) translateZ(9.0rem);
+}
+
+#mediano .bottom, #pequeño .bottom {
+    width: 18.0rem;
+    height: 18.0rem;
+    transform: rotateX(90deg) translateZ(4.0rem);
+    filter: blur(1.5rem);
+}
+
+
+.bottom {
+    box-shadow: 0 0 4.0rem 4.0rem #333333;
+}
+
+#rosa .bottom {
+    box-shadow: 0 0 4.0rem 4.0rem #333333;
+}
+
+#azul .bottom {
+    box-shadow: 0 0 4.0rem 4.0rem #333333;
+}
+    
+#celeste .bottom {
+    box-shadow: 0 0 4.0rem 4.0rem #333333;
+}
+
+
+
+#grande {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 80.0rem;
+}
+
+#grande .cube {
+    width: 35.0rem;
+    height: 35.0rem;
+}
+
+#grande .uno {
+    transform: rotateY(0deg) translateZ(17.5rem);
+}
+#grande .dos{
+    transform: rotateY(90deg) translateZ(17.5rem);
+}
+#grande .tres{
+    transform: rotateY(180deg) translateZ(17.5rem);
+}
+#grande .cuatro{
+    transform: rotateY(270deg) translateZ(17.5rem);
+}
+
+#grande .top {
+    width: 35.0rem;
+    height: 35.0rem;
+    transform: rotateX(90deg) translateZ(17.5rem);
+}
+
+#grande .bottom {
+    width: 35.0rem;
+    height: 35.0rem;
+    transform: rotateX(90deg) translateZ(9.0rem);
+    filter: blur(1.5rem);
+}
+
+#morado .bottom {
+    background-color: #444444;
+    box-shadow: 0 0 6.0rem 6.0rem #333333;
+}

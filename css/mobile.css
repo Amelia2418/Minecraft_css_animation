@@ -1,0 +1,197 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+html {
+    font-size: 62.5%;
+}
+
+.background {
+    background-color: rgb(190, 190, 190);
+    width: 100%;
+    min-height: 100vh;
+}
+
+.container {
+    width: 100%;
+    height: 25.0rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.cube {
+    position: relative;
+    width: 8.0rem;
+    height: 8.0rem;
+    transform-style: preserve-3d;
+    animation: animate 5s linear infinite;
+}
+
+
+@keyframes animate {
+    0% {
+        transform: rotateX(-30deg) rotateY(0deg);
+    }
+
+    100% {
+        transform: rotateX(-30deg) rotateY(360deg);
+    }
+}
+
+
+.cube span {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+}
+
+.uno {
+    transform: rotateY(0deg) translateZ(4.0rem);
+}
+.dos{
+    transform: rotateY(90deg) translateZ(4.0rem);
+}
+.tres{
+    transform: rotateY(180deg) translateZ(4.0rem);
+}
+.cuatro{
+    transform: rotateY(270deg) translateZ(4.0rem);
+}
+
+span img {
+    width: 100%;
+    height: 100%;
+}
+
+.top {
+    width: 8.0rem;
+    height: 8.0rem;
+    transform: rotateX(90deg) translateZ(4.0rem);
+}
+
+.top img {
+    width: 100%;
+    height: 100%;
+}
+
+.bottom {
+    width: 8.0rem;
+    height: 8.0rem;
+    background-color: #444444;
+    transform: rotateX(90deg);
+    filter: blur(1.5rem);
+    box-shadow: 0 0 1.5rem 1.0rem #333333;
+}
+
+
+
+/* -------------------------------------------------------------------------------------------- */
+
+
+
+#rosa .bottom {
+    background-color: #444444;
+    box-shadow: 0 0 2.0rem 2.0rem #333333;
+}
+
+#morado .bottom {
+    background-color: #444444;
+    box-shadow: 0 0 2.0rem 2.0rem #333333;
+}
+
+#azul .bottom {
+    background-color: #444444;
+    box-shadow: 0 0 2.0rem 2.0rem #333333;
+}
+
+#celeste .bottom {
+    background-color: #444444;
+    box-shadow: 0 0 1.5rem 1.0rem #333333;
+}
+
+
+
+/* ------------------------------------------------------------------------------------------------ */
+
+
+
+#grande {
+    height: 35.0rem;
+}
+
+#grande .cube {
+    width: 15.0rem;
+    height: 15.0rem;
+}
+
+#grande .uno {
+    transform: rotateY(0deg) translateZ(7.5rem);
+}
+#grande .dos{
+    transform: rotateY(90deg) translateZ(7.5rem);
+}
+#grande .tres{
+    transform: rotateY(180deg) translateZ(7.5rem);
+}
+#grande .cuatro{
+    transform: rotateY(270deg) translateZ(7.5rem);
+}
+
+#grande .top {
+    width: 15.0rem;
+    height: 15.0rem;
+    transform: rotateX(90deg) translateZ(7.0rem);
+}
+
+#grande .bottom {
+    width: 15.0rem;
+    height: 15.0rem;
+    transform: rotateX(90deg) translateZ(3.0rem);
+    filter: blur(1.5rem);
+}
+
+
+
+/* ---------------------------------------------------------------------------------------- */
+
+
+
+#mediano {
+    height: 32.0rem;
+}
+
+#mediano .cube {
+    width: 12.0rem;
+    height: 12.0rem;
+}
+
+#mediano .uno {
+    transform: rotateY(0deg) translateZ(6.0rem);
+}
+#mediano .dos{
+    transform: rotateY(90deg) translateZ(6.0rem);
+}
+#mediano .tres{
+    transform: rotateY(180deg) translateZ(6.0rem);
+}
+#mediano .cuatro{
+    transform: rotateY(270deg) translateZ(6.0rem);
+}
+
+#mediano .top {
+    width: 12.0rem;
+    height: 12.0rem;
+    transform: rotateX(90deg) translateZ(6.0rem);
+}
+
+#mediano .bottom {
+    width: 12.0rem;
+    height: 12.0rem;
+    transform: rotateX(90deg) translateZ(3.0rem);
+    filter: blur(1.5rem);
+}

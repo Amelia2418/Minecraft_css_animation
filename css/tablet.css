@@ -1,0 +1,93 @@
+.cube_top, .cube_bottom {
+    display: flex;
+    justify-content: space-around;
+}
+
+
+#mediano, #pequeño {
+    height: 32.0rem;
+}
+
+#mediano .cube, #pequeño .cube {
+    width: 10.0rem;
+    height: 10.0rem;
+}
+
+#mediano .uno, #pequeño .uno {
+    transform: rotateY(0deg) translateZ(5.0rem);
+}
+#mediano .dos, #pequeño .dos {
+    transform: rotateY(90deg) translateZ(5.0rem);
+}
+#mediano .tres, #pequeño .tres {
+    transform: rotateY(180deg) translateZ(5.0rem);
+}
+#mediano .cuatro, #pequeño .cuatro {
+    transform: rotateY(270deg) translateZ(5.0rem);
+}
+
+#mediano .top, #pequeño .top {
+    width: 10.0rem;
+    height: 10.0rem;
+    transform: rotateX(90deg) translateZ(5.0rem);
+}
+
+#mediano .bottom, #pequeño .bottom {
+    width: 10.0rem;
+    height: 10.0rem;
+    transform: rotateX(90deg) translateZ(3.0rem);
+    filter: blur(1.5rem);
+}
+
+
+.bottom {
+    background-color: #444444;
+    box-shadow: 0 0 2.0rem 2.0rem #333333;
+}
+
+#celeste .bottom {
+    background-color: #444444;
+    box-shadow: 0 0 2.0rem 2.0rem #333333;
+}
+
+
+
+#grande {
+    min-height: 60.0rem;
+}
+
+#grande .cube {
+    width: 25.0rem;
+    height: 25.0rem;
+}
+
+#grande .uno {
+    transform: rotateY(0deg) translateZ(12.5rem);
+}
+#grande .dos{
+    transform: rotateY(90deg) translateZ(12.5rem);
+}
+#grande .tres{
+    transform: rotateY(180deg) translateZ(12.5rem);
+}
+#grande .cuatro{
+    transform: rotateY(270deg) translateZ(12.5rem);
+}
+
+#grande .top {
+    width: 25.0rem;
+    height: 25.0rem;
+    transform: rotateX(90deg) translateZ(12.0rem);
+}
+
+#grande .bottom {
+    width: 25.0rem;
+    height: 25.0rem;
+    transform: rotateX(90deg) translateZ(7.0rem);
+    filter: blur(1.5rem);
+}
+
+#morado .bottom {
+    background-color: #444444;
+    box-shadow: 0 0 5.0rem 4.0rem #333333;
+}
